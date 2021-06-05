@@ -55,10 +55,15 @@ header .sub-header {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   gap: 1.6rem;
   margin-top: 1.8rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    '     .     team-builder     .'
+    'supervisor team-builder calculator'
+    'supervisor    karma     calculator'
+    '     .        karma         .';
 }
 
 .card {
@@ -71,27 +76,23 @@ header .sub-header {
   flex-direction: column;
 }
 
-.card:nth-child(1) {
-  grid-column: 1 / 2;
-  grid-row: 2 / span 2;
+.card.supervisor {
+  grid-area: supervisor;
   border-color: var(--primary-cyan);
 }
 
-.card:nth-child(2) {
-  grid-column: 2 / 3;
-  grid-row: 1 / span 2;
+.card.team-builder {
+  grid-area: team-builder;
   border-color: var(--primary-red);
 }
 
-.card:nth-child(3) {
-  grid-column: 3 / 4;
-  grid-row: 2 / span 2;
+.card.calculator {
+  grid-area: calculator;
   border-color: var(--primary-blue);
 }
 
-.card:nth-child(4) {
-  grid-column: 2 / 3;
-  grid-row: 3 / span 2;
+.card.karma {
+  grid-area: karma;
   border-color: var(--primary-orange);
 }
 
