@@ -25,7 +25,6 @@ body {
 }
 
 .container {
-  /* border: 1px solid; */
   max-width: 1110px;
   max-height: 780px;
   margin: 1.8rem 1.5rem;
@@ -110,4 +109,30 @@ header .sub-header {
   width: 15%;
   margin-top: 1.5rem;
   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-height: max-content;
+  }
+
+  header .light,
+  header .bold {
+    font-size: 1.5rem;
+  }
+
+  header .sub-header {
+    width: 100%;
+    margin: 1.5rem 0 3rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'supervisor'
+      'team-builder'
+      'karma'
+      'calculator';
+  }
 }
