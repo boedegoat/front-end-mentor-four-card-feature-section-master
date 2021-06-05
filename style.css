@@ -111,6 +111,26 @@ header .sub-header {
   margin-left: auto;
 }
 
+footer {
+  width: 100%;
+  background: var(--neutral-dark);
+  color: var(--neutral-light);
+  text-align: center;
+  padding: 0.8rem;
+  font-size: clamp(10px, 2.5vw, 14px);
+  cursor: default;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--primary-cyan);
+}
+
 @media (max-width: 768px) {
   .container {
     max-height: max-content;
