@@ -14,3 +14,40 @@
   --neutral-grayish: hsl(229, 6%, 66%);
   --neutral-light: hsl(0, 0%, 98%);
 }
+
+body {
+  background: var(--neutral-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* border: 1px solid; */
+  max-width: 1110px;
+  max-height: 780px;
+}
+
+header {
+  text-align: center;
+  padding: 1em 18em;
+}
+
+header .light {
+  font-weight: 200;
+  color: var(--neutral-dark);
+}
+
+header .bold {
+  font-weight: 600;
+  color: var(--neutral-dark);
+}
+
+header .sub-header {
+  font-weight: 400;
+  color: var(--neutral-grayish);
+  margin-top: 0.5em;
+  font-size: 15px;
+}
