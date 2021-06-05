@@ -28,7 +28,7 @@ body {
   /* border: 1px solid; */
   max-width: 1110px;
   max-height: 780px;
-  margin: 0 1.5rem;
+  margin: 1.8rem 1.5rem;
 }
 
 header {
@@ -67,6 +67,8 @@ header .sub-header {
   border-radius: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-top: 4px solid #000;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:nth-child(1) {
@@ -101,4 +103,10 @@ header .sub-header {
   color: var(--neutral-grayish);
   font-size: 15px;
   margin-top: 0.5rem;
+}
+
+.card__icon {
+  width: 15%;
+  margin-top: 1.5rem;
+  margin-left: auto;
 }
